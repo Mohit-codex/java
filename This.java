@@ -29,6 +29,7 @@ keyword m1=new keyword();
 m1.putdata(40, 50);
 m1.displayData();
 keysword m2 =new keysword();
+m2.putdata(400, 500);
 m2.putvalue(100, 200);
 m2.displayData();
 m2.displayvalue();
