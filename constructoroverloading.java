@@ -23,7 +23,7 @@ class fx{
 
 public class constructoroverloading {
    public static void main(String[] args) {
-        fx m1=new fx();
+        fx m1 =new fx();
         fx m2=new fx(10,29);
         fx m3=new fx(29.20);
         fx m4=new fx(40);
