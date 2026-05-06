@@ -2,7 +2,7 @@ class mohit{
 int x;
 int y;
 void fun1(){
-    System.out.println("this is instance function 1");
+    System.out.println("this is a instance function 1");
 }
 void fun2(){
     System.out.println("this is instance function 2");
