@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class superclass{
     private int x;
     void method1(int a){
@@ -10,13 +11,16 @@ class superclass{
 }
 }
 class sub extends superclass{
-  public int a ,b;
-     void method2(int a ,int b){
- 
-        System.out.println("i am a method of super class");
+  public int m ,n;
+     void method2(int p,int q){
+ m=p;
+ n=q;
+  super.method1(p);
+ System.out.println("m=="+m+"and value of n=="+n);
+      
     }
     sub(){
-        super();
+       
 System.out.println("this is the constructor of subclass");
     }
 }
@@ -24,6 +28,21 @@ System.out.println("this is the constructor of subclass");
 
 public class SubvsSup {
     public static void main(String[] args) {
+       
+        Scanner sb= new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a=sb.nextInt();
+        System.out.println("enter the value of b");
+  int b=sb.nextInt();
+  System.out.println("enter your name");
+  sb.nextLine();   
+  String name=sb.nextLine();
+  System.out.println("enter your capital");
+  String capital=sb.next();
+  System.out.println("the name will be"+name);
+   System.out.println("the capital will be"+capital);
         sub objSub=new sub();
+        objSub.method2(a,b);
+        sb.close();
     }
 }
